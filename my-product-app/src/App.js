@@ -1,28 +1,13 @@
 
-// src/App.js
-import React from 'react';
-import { productData } from './product';
-import Name from './name';
-import Price from './price';
-import Description from './description';
-import Image from './image';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-
+import'./App.css';
 function App() {
-  const firstName = "YourFirstName"; // Replace with your first name or use a variable if available.
-
   return (
     <div className="App">
-      <div className="card">
-        <Image image={productData.image} />
-        <div className="card-body">
-          <Name name={productData.name} />
-          <Price price={productData.price} />
-          <Description description={productData.description} />
-        </div>
-      </div>
-
-      <p>Hello, {firstName ? firstName : "there"}!</p>
+     <h1>hello this is my product</h1>
+     <img src='https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/2eff461f-f3ac-4285-9c6a-2f22173aac42/custom-nike-air-force-1-low-by-you.png'></img>
+     <h1>name=nike airforce 1 low</h1>
+     <h1>price=40$</h1>
+     <h1>description=it is so cool to take it</h1>
     </div>
   );
 }
